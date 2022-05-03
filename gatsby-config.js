@@ -1,26 +1,48 @@
 module.exports = {
   siteMetadata: {
-    title: `gatsby-test`,
+    title: "RoutED",
+    description: "Directing patients to the most available care.",
     siteUrl: `https://www.yourdomain.tld`
   },
-  plugins: ["gatsby-plugin-styled-components", {
-    resolve: 'gatsby-plugin-google-analytics',
-    options: {
-      "trackingId": "CHANGEME"
-    }
-  }, "gatsby-plugin-image", "gatsby-plugin-react-helmet", "gatsby-plugin-sitemap", "gatsby-plugin-mdx", "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
-    resolve: 'gatsby-source-filesystem',
-    options: {
-      "name": "images",
-      "path": "./src/images/"
+  plugins: [
+    "gatsby-plugin-theme-ui",
+    "gatsby-plugin-styled-components",
+    "gatsby-plugin-prettier-build",
+//    "gatsby-plugin-image",
+//    "gatsby-plugin-react-helmet",
+//    "gatsby-plugin-sitemap",
+//    "gatsby-plugin-sharp",
+//    "gatsby-transformer-sharp",
+    {
+      resolve: "gatsby-plugin-mdx",
+      options: {
+        extensions: [".md", ".mdx"],
+        defaultLayouts: {
+          default: require.resolve("./src/components/DefaultLayout.js")
+        }
+      }
     },
-    __key: "images"
-  }, {
-    resolve: 'gatsby-source-filesystem',
-    options: {
-      "name": "pages",
-      "path": "./src/pages/"
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        "name": "images",
+        "path": "./src/images/"
+      },
+      __key: "images"
     },
-    __key: "pages"
-  }]
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        "name": "pages",
+        "path": "./src/pages/"
+      },
+      __key: "pages"
+    },
+    {
+      resolve: "gatsby-plugin-google-analytics",
+      options: {
+        "trackingId": "CHANGEME"
+      }
+    },
+  ]
 };

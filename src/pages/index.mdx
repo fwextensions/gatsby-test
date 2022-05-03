@@ -1,0 +1,45 @@
+import { Box, Button, Heading, Image } from "theme-ui";
+import { Feature, Description } from "../components/Feature";
+import AmbulanceImage from "../images/ambulance.png";
+import MobileImage from "../images/mobile-ui.png";
+import HospitalImage from "../images/hospital-ui.png";
+
+# Welcome to RoutED
+
+<Feature>
+	<Description>
+		<Heading>
+			Directing patients to the most available care.
+		</Heading>
+		<Box sx={{ fontSize: "1.25rem" }}>
+			Lorem ipsum
+		</Box>
+	</Description>
+	<Image src={AmbulanceImage} />
+</Feature>
+
+<Feature>
+	<Image src={MobileImage} />
+	<Description>
+		<Heading>
+			For EMTs
+		</Heading>
+		<Box sx={{ fontSize: "1.25rem" }}>
+			Know what emergency departments have open beds.
+		</Box>
+		<Button sx={{ mt: 16 }}>View EMT User Guide</Button>
+	</Description>
+</Feature>
+
+<Feature>
+	<Description>
+		<Heading>
+			For Hospitals
+		</Heading>
+		<Box sx={{ fontSize: "1.25rem" }}>
+			Prepare for incoming patients with digital ringdowns.
+		</Box>
+		<Button sx={{ mt: 16 }}>View Hospital User Guide</Button>
+	</Description>
+	<Image src={HospitalImage} />
+</Feature>
