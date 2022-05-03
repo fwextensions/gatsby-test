@@ -39,7 +39,7 @@ export default function Footer({ siteTitle, siteDescription })
 						}}
 					>
 						<h3>
-							<Link href="/" sx={{ fontWeight: "bold" }}>
+							<Link href="/gatsby-test/" sx={{ fontWeight: "bold" }}>
 								{siteTitle}
 							</Link>
 						</h3>
@@ -52,10 +52,10 @@ export default function Footer({ siteTitle, siteDescription })
 						}}
 					>
 						<h3>Directory</h3>
-						<Link href="/our-story">Our Story</Link>
-						<Link href="/faq">FAQ</Link>
-						<Link href="/support">Support</Link>
-						<Link href="/user-guides">User Guides</Link>
+						<Link href="/gatsby-test/our-story">Our Story</Link>
+						<Link href="/gatsby-test/faq">FAQ</Link>
+						<Link href="/gatsby-test/support">Support</Link>
+						<Link href="/gatsby-test/user-guides">User Guides</Link>
 					</Flex>
 					<Flex
 						sx={{

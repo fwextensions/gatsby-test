@@ -36,14 +36,14 @@ export default function Header({ siteTitle, siteDescription })
 				}}
 			>
 				<Flex as="nav" sx={{ justifyContent: "space-between" }}>
-					<HeaderLink href="/" sx={{ m: 0 }}>
+					<HeaderLink href="/gatsby-test/" sx={{ m: 0 }}>
 						{siteTitle}
 					</HeaderLink>
 					<Flex>
-						<HeaderLink href="/our-story">Our Story</HeaderLink>
-						<HeaderLink href="/faq">FAQ</HeaderLink>
-						<HeaderLink href="/support">Support</HeaderLink>
-						<HeaderLink href="/user-guides">User Guides</HeaderLink>
+						<HeaderLink href="/gatsby-test/our-story">Our Story</HeaderLink>
+						<HeaderLink href="/gatsby-test/faq">FAQ</HeaderLink>
+						<HeaderLink href="/gatsby-test/support">Support</HeaderLink>
+						<HeaderLink href="/gatsby-test/user-guides">User Guides</HeaderLink>
 					</Flex>
 				</Flex>
 			</Box>

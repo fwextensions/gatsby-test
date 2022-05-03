@@ -1,3 +1,30 @@
+# Gatsby Test
+
+## Uses
+
+- Gatsby for SSG
+- Theme-UI for styling
+- MDX/React for page markup
+
+
+## Working
+
+- [X] Building and deploying with GitHub actions
+- [X] Basic nav in header/footer
+- [X] Expandable FAQs
+- [X] Fake team images/names
+- [X] Placeholder images
+
+
+## Not working
+
+- [ ] Any real styling
+- [ ] User guide layouts
+- [ ] Mobile support
+- [ ] Doesn't deploy with `GITHUB_TOKEN` for some reason
+
+
+<!--
 <p align="center">
   <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
     <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
@@ -52,3 +79,4 @@
 Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
 
 [<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal)
+-->
