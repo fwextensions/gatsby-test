@@ -1,16 +1,17 @@
 import React from "react";
-import { Box, Flex, NavLink, Text } from "theme-ui";
+import { Box, Flex, Text } from "theme-ui";
+import BaseLink from "./Link";
 
-const Link = ({ href, sx, children }) => (
-	<NavLink
-		href={href}
+const Link = ({ sx, ...props }) => (
+	<BaseLink
+		{...props}
 		sx={{
 			fontWeight: "normal",
+			fontSize: 2,
+			ml: 0,
 			...sx
 		}}
-	>
-		{children}
-	</NavLink>
+	/>
 );
 
 export default function Footer({ siteTitle, siteDescription })
@@ -39,7 +40,7 @@ export default function Footer({ siteTitle, siteDescription })
 						}}
 					>
 						<h3>
-							<Link href="/gatsby-test/" sx={{ fontWeight: "bold" }}>
+							<Link href="/" sx={{ fontWeight: "bold" }}>
 								{siteTitle}
 							</Link>
 						</h3>
@@ -52,10 +53,10 @@ export default function Footer({ siteTitle, siteDescription })
 						}}
 					>
 						<h3>Directory</h3>
-						<Link href="/gatsby-test/our-story">Our Story</Link>
-						<Link href="/gatsby-test/faq">FAQ</Link>
-						<Link href="/gatsby-test/support">Support</Link>
-						<Link href="/gatsby-test/user-guides">User Guides</Link>
+						<Link href="/our-story">Our Story</Link>
+						<Link href="/faq">FAQ</Link>
+						<Link href="/support">Support</Link>
+						<Link href="/user-guides">User Guides</Link>
 					</Flex>
 					<Flex
 						sx={{

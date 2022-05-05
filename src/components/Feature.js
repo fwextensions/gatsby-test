@@ -1,12 +1,11 @@
 import React from "react";
-import { Box, Flex, Image } from "theme-ui";
+import { Box } from "theme-ui";
 
 export const Description = ({ children }) => (
 	<Box
 		sx={{
 			px: "5rem",
 			py: "2rem",
-//			flexDirection: "column",
 		}}
 	>
 		{children}

@@ -1,23 +1,8 @@
 import React from "react";
-import { Box, Flex, NavLink } from "theme-ui";
+import { Box, Flex } from "theme-ui";
+import Link from "./Link";
 
-function HeaderLink({ href, sx, children })
-{
-	return (
-		<NavLink
-			href={href}
-			sx={{
-				fontSize: 4,
-				ml: 5,
-				...sx
-			}}
-		>
-			{children}
-		</NavLink>
-	);
-}
-
-export default function Header({ siteTitle, siteDescription })
+export default function Header({ siteTitle })
 {
 	return (
 		<Box as="header"
@@ -36,14 +21,14 @@ export default function Header({ siteTitle, siteDescription })
 				}}
 			>
 				<Flex as="nav" sx={{ justifyContent: "space-between" }}>
-					<HeaderLink href="/gatsby-test/" sx={{ m: 0 }}>
+					<Link href="/" sx={{ m: 0 }}>
 						{siteTitle}
-					</HeaderLink>
+					</Link>
 					<Flex>
-						<HeaderLink href="/gatsby-test/our-story">Our Story</HeaderLink>
-						<HeaderLink href="/gatsby-test/faq">FAQ</HeaderLink>
-						<HeaderLink href="/gatsby-test/support">Support</HeaderLink>
-						<HeaderLink href="/gatsby-test/user-guides">User Guides</HeaderLink>
+						<Link href="/our-story">Our Story</Link>
+						<Link href="/faq">FAQ</Link>
+						<Link href="/support">Support</Link>
+						<Link href="/user-guides">User Guides</Link>
 					</Flex>
 				</Flex>
 			</Box>

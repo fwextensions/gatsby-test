@@ -16,11 +16,13 @@
 - [X] Placeholder images
 
 
-## Not working
+## Not working/started
 
 - [ ] Any real styling
 - [ ] User guide layouts
 - [ ] Mobile support
+- [ ] Highlighting current page in header
+- [ ] Title for each page isn't getting set
 - [ ] Doesn't deploy with `GITHUB_TOKEN` for some reason
 
 
