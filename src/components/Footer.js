@@ -40,7 +40,7 @@ export default function Footer({ siteTitle, siteDescription })
 						}}
 					>
 						<h3>
-							<Link href="/" sx={{ fontWeight: "bold" }}>
+							<Link to="/" sx={{ fontWeight: "bold" }}>
 								{siteTitle}
 							</Link>
 						</h3>
@@ -53,10 +53,10 @@ export default function Footer({ siteTitle, siteDescription })
 						}}
 					>
 						<h3>Directory</h3>
-						<Link href="/our-story">Our Story</Link>
-						<Link href="/faq">FAQ</Link>
-						<Link href="/support">Support</Link>
-						<Link href="/user-guides">User Guides</Link>
+						<Link to="/our-story">Our Story</Link>
+						<Link to="/faq">FAQ</Link>
+						<Link to="/support">Support</Link>
+						<Link to="/user-guides">User Guides</Link>
 					</Flex>
 					<Flex
 						sx={{
@@ -64,7 +64,7 @@ export default function Footer({ siteTitle, siteDescription })
 						}}
 					>
 						<h3>Contact</h3>
-						<Link href="mailto:contact@routedapp.net">contact@routedapp.net</Link>
+						<Link to="mailto:contact@routedapp.net">contact@routedapp.net</Link>
 					</Flex>
 				</Flex>
 			</Box>

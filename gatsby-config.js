@@ -8,7 +8,6 @@ module.exports = {
 	plugins: [
 		"gatsby-plugin-theme-ui",
 		"gatsby-plugin-styled-components",
-		"gatsby-plugin-prettier-build",
 //		"gatsby-plugin-image",
 //		"gatsby-plugin-react-helmet",
 //		"gatsby-plugin-sitemap",

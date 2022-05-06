@@ -21,14 +21,14 @@ export default function Header({ siteTitle })
 				}}
 			>
 				<Flex as="nav" sx={{ justifyContent: "space-between" }}>
-					<Link href="/" sx={{ m: 0 }}>
+					<Link to="/" sx={{ m: 0 }}>
 						{siteTitle}
 					</Link>
 					<Flex>
-						<Link href="/our-story">Our Story</Link>
-						<Link href="/faq">FAQ</Link>
-						<Link href="/support">Support</Link>
-						<Link href="/user-guides">User Guides</Link>
+						<Link to="/our-story">Our Story</Link>
+						<Link to="/faq">FAQ</Link>
+						<Link to="/support">Support</Link>
+						<Link to="/user-guides">User Guides</Link>
 					</Flex>
 				</Flex>
 			</Box>
