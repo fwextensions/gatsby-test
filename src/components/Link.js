@@ -10,15 +10,20 @@ export default function Link({ sx, ...props })
 {
 	return <GatsbyLink
 		{...props}
+		activeStyle={{ fontWeight: 700 }}
 		activeClassName="active"
 		sx={{
 			color: "inherit",
 			textDecoration: "none",
 			fontSize: 4,
-			fontWeight: 700,
 			ml: 5,
-			"&:hover, &:active": {
+			"&:hover": {
 				color: "primary"
+			},
+				// set a class on active links so we can disable any hover effect
+			"&.active:hover": {
+				color: "inherit",
+				cursor: "default"
 			},
 			...sx
 		}}

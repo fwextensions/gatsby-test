@@ -25,10 +25,10 @@ export default function Header({ siteTitle })
 						{siteTitle}
 					</Link>
 					<Flex>
-						<Link to="/our-story">Our Story</Link>
-						<Link to="/faq">FAQ</Link>
-						<Link to="/support">Support</Link>
-						<Link to="/user-guides">User Guides</Link>
+						<Link to="/our-story/">Our Story</Link>
+						<Link to="/faq/">FAQ</Link>
+						<Link to="/support/">Support</Link>
+						<Link to="/user-guides/">User Guides</Link>
 					</Flex>
 				</Flex>
 			</Box>
