@@ -32,6 +32,6 @@
 A `.env` file containing the following values must be added in the root directory:
 
 - `CONTENTFUL_SPACE_ID`
-= `CONTENTFUL_ACCESS_TOKEN`
+- `CONTENTFUL_ACCESS_TOKEN`
 
 These values enable the `gatsby-source-contentful` plugin to access the page data stored on Contentful.  The same keys and values need to be provided as secrets in the GitHub repo.

@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Flex, Text } from "theme-ui";
+import { Box, Flex, Text, Link as Anchor } from "theme-ui";
 import BaseLink from "./Link";
 
 const Link = ({ sx, ...props }) => (
@@ -64,7 +64,7 @@ export default function Footer({ siteTitle, siteDescription })
 						}}
 					>
 						<h3>Contact</h3>
-						<a href="mailto:contact@routedapp.net">contact@routedapp.net</a>
+						<Anchor href="mailto:contact@routedapp.net">contact@routedapp.net</Anchor>
 					</Flex>
 				</Flex>
 			</Box>

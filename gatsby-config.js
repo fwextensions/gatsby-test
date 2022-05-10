@@ -32,6 +32,14 @@ module.exports = {
 			}
 		},
 		{
+			resolve: "gatsby-plugin-alias-imports",
+			options: {
+				alias: {
+					"@": "src"
+				}
+			}
+		},
+		{
 			resolve: "gatsby-source-filesystem",
 			options: {
 				"name": "images",
