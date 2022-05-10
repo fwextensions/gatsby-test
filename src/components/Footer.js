@@ -64,7 +64,7 @@ export default function Footer({ siteTitle, siteDescription })
 						}}
 					>
 						<h3>Contact</h3>
-						<Link to="mailto:contact@routedapp.net">contact@routedapp.net</Link>
+						<a href="mailto:contact@routedapp.net">contact@routedapp.net</a>
 					</Flex>
 				</Flex>
 			</Box>

@@ -5,15 +5,15 @@ require("dotenv").config({
 module.exports = {
 	siteMetadata: {
 		title: "RoutED",
-		description: "Directing patients to the most available care.",
-		siteUrl: `https://www.yourdomain.tld`
+		titleTemplate: "RoutED · %s",
+		description: "Directing patients to the most available care."
 	},
 	pathPrefix: "/gatsby-test",
 	plugins: [
 		"gatsby-plugin-theme-ui",
 		"gatsby-plugin-styled-components",
 		"gatsby-plugin-image",
-//		"gatsby-plugin-react-helmet",
+		"gatsby-plugin-react-helmet",
 //		"gatsby-plugin-sitemap",
 //		"gatsby-plugin-sharp",
 //		"gatsby-transformer-sharp",
