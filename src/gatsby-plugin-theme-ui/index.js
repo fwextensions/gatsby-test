@@ -1,7 +1,5 @@
 import { deep, bootstrap } from "@theme-ui/presets";
 
-console.log(bootstrap);
-
 const theme = {
 	...bootstrap,
 
@@ -61,7 +59,5 @@ const theme = {
 		},
 	}
 };
-
-console.log(theme);
 
 export default theme;
