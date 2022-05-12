@@ -55,11 +55,11 @@ module.exports = {
 			},
 			__key: "pages"
 		},
-		{
-			resolve: "gatsby-plugin-google-analytics",
-			options: {
-				"trackingId": "CHANGEME"
-			}
-		},
+//		{
+//			resolve: "gatsby-plugin-google-analytics",
+//			options: {
+//				"trackingId": "CHANGEME"
+//			}
+//		},
 	]
 };
