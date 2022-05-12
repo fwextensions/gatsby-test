@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from "react";
-import { Box, Card, Image, Text } from "theme-ui";
+import React from "react";
+import { graphql, useStaticQuery } from "gatsby";
+import { Box, Card, Heading, Image, Text } from "theme-ui";
 
-function TeamMember({ name, picture })
+function TeamMember({ name, role, picture })
 {
 	return (
 		<Card>
@@ -10,26 +11,31 @@ function TeamMember({ name, picture })
 				src={picture}
 				sx={{ mb: ".5rem" }}
 			/>
-			<Text variant="heading">
+			<Heading variant="name">
 				{name}
+			</Heading>
+			<Text>
+				{role}
 			</Text>
 		</Card>
 	);
 }
 
-export default function Team()
+export default function TeamList()
 {
-	const [members, setMembers] = useState([]);
-
-	useEffect(() => {
-		(async () => {
-			const response = await fetch(
-				"https://randomuser.me/api/?inc=name,picture&results=18");
-			const json = await response.json();
-
-			setMembers(json.results);
-		})();
-	}, [setMembers]);
+	const {
+		allContentfulTeamMember: { nodes }
+	} = useStaticQuery(graphql`
+		{
+			allContentfulTeamMember(sort: { fields: fullName, order: ASC }) {
+				nodes {
+					fullName
+					role
+					imageUrl
+				}
+			}
+		}
+	`);
 
 	return (
 		<Box
@@ -39,10 +45,11 @@ export default function Team()
 				flexWrap: "wrap"
 			}}
 		>
-			{members.map(({ name: { first, last }, picture: { large } }) => (
+			{nodes.map(({ fullName, role, imageUrl }) => (
 				<TeamMember
-					name={first + " " + last}
-					picture={large}
+					name={fullName}
+					role={role}
+					picture={imageUrl}
 				/>
 			))}
 		</Box>

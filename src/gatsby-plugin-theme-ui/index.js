@@ -33,7 +33,7 @@ const theme = {
 	},
 
 	text: {
-		role: {
+		name: {
 			fontWeight: "bold",
 			fontSize: 2
 		}
