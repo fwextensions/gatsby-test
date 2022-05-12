@@ -1,5 +1,7 @@
 import { deep, bootstrap } from "@theme-ui/presets";
 
+console.log(bootstrap);
+
 const theme = {
 	...bootstrap,
 
@@ -22,9 +24,20 @@ const theme = {
 		},
 		h1: {
 			fontSize: 8,
-			fontWeight: "bolder",
+			fontWeight: "bold",
 			mt: "48px",
 			mb: "48px"
+		},
+		h4: {
+			...bootstrap.styles.h4,
+			fontWeight: "bold"
+		}
+	},
+
+	text: {
+		role: {
+			fontWeight: "bold",
+			fontSize: 2
 		}
 	},
 
@@ -48,5 +61,7 @@ const theme = {
 		},
 	}
 };
+
+console.log(theme);
 
 export default theme;

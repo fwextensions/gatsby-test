@@ -5,8 +5,8 @@ title: Home
 import { Box, Button, Heading, Image } from "theme-ui";
 import { Feature, Description } from "@/components/Feature";
 import AmbulanceImage from "@/images/ambulance.png";
-import MobileImage from "@/images/mobile-ui.png";
-import HospitalImage from "@/images/hospital-ui.png";
+import EMTsImage from "@/images/for-emts.png";
+import HospitalsImage from "@/images/for-hospitals.png";
 
 # Welcome to RoutED
 
@@ -23,7 +23,6 @@ import HospitalImage from "@/images/hospital-ui.png";
 </Feature>
 
 <Feature>
-	<Image src={MobileImage} />
 	<Description>
 		<Heading>
 			For EMTs
@@ -33,9 +32,11 @@ import HospitalImage from "@/images/hospital-ui.png";
 		</Box>
 		<Button sx={{ mt: 16 }}>View EMT User Guide</Button>
 	</Description>
+	<Image src={EMTsImage} />
 </Feature>
 
 <Feature>
+	<Image src={HospitalsImage} />
 	<Description>
 		<Heading>
 			For Hospitals
@@ -45,5 +46,4 @@ import HospitalImage from "@/images/hospital-ui.png";
 		</Box>
 		<Button sx={{ mt: 16 }}>View Hospital User Guide</Button>
 	</Description>
-	<Image src={HospitalImage} />
 </Feature>
