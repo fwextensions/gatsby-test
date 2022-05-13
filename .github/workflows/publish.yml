@@ -35,7 +35,7 @@ jobs:
           path: |
             .cache
             public
-          key: ${{ runner.os }}-build-cache
+          key: ${{ runner.os }}-gatsby
 
       - name: Install
         run: npm ci --ignore-scripts --prefer-offline --no-audit
