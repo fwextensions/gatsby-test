@@ -16,13 +16,15 @@ export default function Link({ sx, ...props })
 			color: "inherit",
 			textDecoration: "none",
 			fontSize: 4,
+			fontWeight: "normal",
 			ml: 5,
 			"&:hover": {
-				color: "primary"
+				color: "highlight"
 			},
 				// set a class on active links so we can disable any hover effect
-			"&.active:hover": {
-				color: "inherit",
+			"&.active, &.active:hover": {
+				color: "highlight",
+				fontWeight: "bold",
 				cursor: "default"
 			},
 			...sx

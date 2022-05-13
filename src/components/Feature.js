@@ -20,7 +20,13 @@ export function Feature({ children })
 				display: "grid",
 				gridAutoFlow: "column",
 				gridAutoColumns: "1fr",
-				alignItems: "center"
+				alignItems: "center",
+				"& button": {
+					bg: "highlight"
+				},
+				"& button:hover": {
+					bg: "#007f8a"
+				}
 			}}
 		>
 			{children}

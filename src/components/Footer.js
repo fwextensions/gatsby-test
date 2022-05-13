@@ -19,7 +19,8 @@ export default function Footer({ siteTitle, siteDescription })
 	return (
 		<Box as="footer"
 			sx={{
-				bg: "#73B3E7",
+				bg: "primary",
+				color: "white",
 				mt: "24px",
 				pb: "2rem"
 			}}

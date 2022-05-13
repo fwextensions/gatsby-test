@@ -10,6 +10,9 @@ const theme = {
 				...deep.colors,
 			},
 		},
+		primary: "#00205c",
+		secondary: "#425cc7",
+		highlight: "#00adbb"
 	},
 
 	styles: {
@@ -36,6 +39,20 @@ const theme = {
 		name: {
 			fontWeight: "bold",
 			fontSize: 2
+		},
+		subheading: {
+			fontSize: 2,
+			fontWeight: "normal",
+			mt: 2
+		}
+	},
+
+	buttons: {
+		primary: {
+			fontWeight: "bold",
+			":hover": {
+				cursor: "pointer"
+			}
 		}
 	},
 

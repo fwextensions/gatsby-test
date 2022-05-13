@@ -2,7 +2,7 @@
 title: Our Story
 ---
 
-import { Button, Flex } from "theme-ui";
+import Callout from "@/components/Callout";
 import Team from "@/components/Team";
 
 
@@ -14,22 +14,10 @@ Since then, we’ve worked closely with the SFFD, as well as nurses, administrat
 
 Today, we’re preparing to beta test the tool in the city of San Francisco.
 
-<Flex
-	sx={{
-		py: 4,
-		my: "36px",
-		border: "1px solid #aaa",
-		borderWidth: "1px 0",
-		borderColor: "gray.3",
-		alignItems: "center",
-		justifyContent: "space-between"
-	}}
->
-	<h4>
-		Curious how RoutED could help your city?
-	</h4>
-	<Button sx={{ py: 2 }}>Contact Us</Button>
-</Flex>
+<Callout
+	heading="Curious how RoutED could help your city?"
+	cta="Contact Us"
+/>
 
 
 ## Meet the Team
@@ -37,3 +25,9 @@ Today, we’re preparing to beta test the tool in the city of San Francisco.
 Our all-volunteer team includes software engineers, data analysts, full-stack developers, and designers, with experience in patient health care records, hospitality, government services, and logistics.
 
 <Team />
+
+<Callout
+	heading="Interested in volunteering?"
+	subheading="Join our Code for America meetup group on Wednesdays at 6:30pm (Pacific)"
+	cta="Learn More"
+/>
