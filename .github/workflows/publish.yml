@@ -35,7 +35,9 @@ jobs:
           path: |
             .cache
             public
-          key: ${{ runner.os }}-gatsby
+          # we have to not include the string "gatsby" in the cache name.
+          # otherwise, the cache will be busted on every build.
+          key: ${{ runner.os }}-build-cache
 
       - name: Install
         run: npm ci --ignore-scripts --prefer-offline --no-audit
